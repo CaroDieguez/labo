@@ -1,0 +1,15 @@
+Si bien se hicieron varias pruebas, agregando y cambiando el valor de diferentes parámetros y modificando los scripts brindados por la materia, la siguiente es la sucesión de pasos que lleva a generar el archivo final subido en KAggle (12/10/2022).
+
+1. Teniendo en cuenta el dataset proporcionado por la materia, con los datos históricos, ejecutar el archivo "Ajuste_IPC.r", autoría de Gines Garcia Zeman
+
+2. El archivo generado en el item 1 será llamdo al ejecutar "815_FE_final_Caro.r" 
+(A partir de la línea 297 se listan algunas variables incluidas por mí, se tiene en cuenta solo delta lags de orden 2. Se intentó pruebas con un RF más frondoso pero por temas de tiempo de computó se dejó de lado)
+
+3. Siguiendo, la estimación bayesiana "c633_lightgbm_BO_final.r", teniendo en cuenta 10 meses desde 202003 a 202101 inclusive.
+En cuanto a los parámetros a considerar, finalmente se desestimó tener en cuenta los lambdas.
+
+4. El archivo "HT6330final" muestras los valores de los parámetros en cada iteración. Los tenidos en cuenta para la entrega final están resaltados en verde (iteración 79).
+
+5. Por último, se deberá correr el script "c844_lightgbm_semillerio_final1.r", teniendo en cuenta los hiperparámetros mencionados en el punto anterior. (Modelo entrenado en 10 meses, los mismos mencionados arriba).
+
+8500 fue el corte elegido para la subida final.
